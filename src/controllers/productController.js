@@ -73,7 +73,6 @@ const productController = {
     });
   },
   update: (req, res) => {
-   
     let id = req.params.id;
 
     for (let s of products) {

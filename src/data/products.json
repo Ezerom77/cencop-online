@@ -1,11 +1,6 @@
 [
  {
   "id": 1,
-  "name": "Formulario Fonoaudiologia",
-  "categories": "Formularios",
-  "pages": "2",
-  "stock": "2",
-  "description": "Formulario de audiometria",
   "image": "form1.jpg"
  },
  {
@@ -55,12 +50,11 @@
  },
  {
   "id": 7,
-  "name": "Recetarios Genericos",
-  "categories": "Recetarios",
-  "pages": "2",
-  "stock": "2",
-  "description": "Recetarios genericos con Logo",
-  "image": "form7.jpg"
+  "image": "form7.jpg",
+  "name": "Form de Ejemplo",
+  "description": "Prueba de Edicion de producto en JSON",
+  "pages": "22",
+  "stock": "33"
  },
  {
   "id": 8,
@@ -70,14 +64,5 @@
   "stock": "2",
   "description": "Formulario de consentimiento",
   "image": "form8.jpg"
- },
- {
-  "id": 9,
-  "name": "Form de Ejemplo",
-  "description": "Prueba de creacion de producto en JSON",
-  "categories": "Documentos",
-  "pages": "23",
-  "stock": "123",
-  "image": "1646775098001test.png"
  }
 ]
