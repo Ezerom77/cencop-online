@@ -1,7 +1,11 @@
 [
  {
   "id": 1,
-  "image": "form1.jpg"
+  "image": "form1.jpg",
+  "name": "Formulario de Fonoaudiología",
+  "description": "Registro de audiometria",
+  "pages": "2",
+  "stock": "343"
  },
  {
   "id": 2,

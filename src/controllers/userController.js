@@ -10,6 +10,12 @@ const usersController = {
     },
     pedido: (req, res)=>{
         res.render('./users/pedido', { title: 'Pedido' })
+    },
+    login: (req, res)=>{
+        res.render('./users/login', { title: 'Login' })
+    },
+    logedIn: (req, res)=>{
+        res.send('te logeaste pero esta vista todavia no existe')
     }
 }
 

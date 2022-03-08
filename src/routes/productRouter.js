@@ -33,4 +33,8 @@ router.get("/detail/:id", productController.detail);
 router.get("/edit/:id", productController.edit);
 router.put('/edit/:id', productController.update);
 
+//Delete an existing product
+router.delete("/edit/:id", productController.delete);
+
+
 module.exports = router;

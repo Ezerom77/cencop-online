@@ -43,7 +43,7 @@ const productController = {
 
     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
 
-    res.redirect("/");
+    res.redirect("/products");
   },
   detail: (req, res) => {
     let productoSeleccionado = null;
@@ -57,7 +57,6 @@ const productController = {
       productDetail: productoSeleccionado,
     });
   },
-
   // Edit Method
   edit: (req, res) => {
     let id = req.params.id;
@@ -74,7 +73,6 @@ const productController = {
   },
   update: (req, res) => {
     let id = req.params.id;
-
     for (let s of products) {
       if (id == s.id) {
         s.name = req.body.productName;
@@ -82,14 +80,38 @@ const productController = {
         s.categories = req.body.categorias;
         s.pages = req.body.productPages;
         s.stock = req.body.productStock;
-       break;
+        break;
+      }
+    }
+    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+    res.redirect("/");
+  },
+  delete: (req, res) => {
+    let id = req.params.id;
+    let ProductoEncontrado = null;
+
+    let Nproducts = products.filter(function (e) {
+      return id != e.id;
+    });
+
+    for (let producto of products) {
+      if (producto.id == id) {
+        ProductoEncontrado = producto;
       }
     }
 
-    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+    fs.unlinkSync(
+      path.join(
+        __dirname,
+        "../../public/images/products/",
+        ProductoEncontrado.image
+      )
+    );
 
-    res.redirect("/");
-  }
+    fs.writeFileSync(productsFilePath, JSON.stringify(Nproducts, null, " "));
+
+    res.redirect("/products");
+  },
 };
 
 module.exports = productController;
