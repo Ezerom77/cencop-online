@@ -3,8 +3,8 @@
   padding: 0px;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Lato', sans-serif;
+body {
+  font-family: "Lato", sans-serif;
 }
 
 /*//////////////////   HEADER   ///////////////////////*/
@@ -17,7 +17,6 @@ body{
 /*///////////////   Header Top   ///////////////////////*/
 .header-top {
   width: 100%;
-  padding: 10px 15px;
 }
 
 .top-left {
@@ -26,7 +25,6 @@ body{
 
 .logo {
   font-size: x-large;
-  padding: 20px 0;
   text-align: center;
 }
 .logo a {
@@ -39,6 +37,9 @@ body{
 }
 .logo:hover a {
   color: #2bc37f;
+}
+.logo img{
+  margin-bottom: 5px;
 }
 .searchbox {
   position: relative;
@@ -74,9 +75,11 @@ body{
   padding: 5px;
 }
 .top-right .nav-links {
+
   padding: 0;
 }
 .top-right .nav-links li {
+  
   padding: 10px 0;
   text-align: center;
 }
@@ -110,11 +113,12 @@ ul li a i {
 
 .site-nav ul.nav-links {
   display: none;
+  margin-bottom: 5px;
 }
 
 .site-nav ul li a {
   padding: 5px;
-  color: #c5c5c5;
+  color: #6c6161;
 }
 
 .site-nav ul li:hover a {
@@ -133,6 +137,181 @@ ul li a i {
   margin: auto;
   justify-content: center;
   align-items: center;
+}
+/*/////// LOGIN AND REGISTER PAGES /////////*/
+
+.form-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #000000;
+}
+
+.form-signin {
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  border-radius: 15px;
+}
+
+.form-signin .checkbox {
+  display: block;
+  font-weight: 400;
+  margin-bottom: -1px;
+}
+
+.form-floating {
+  padding-top: -1px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 5;
+  border-top-right-radius: 5;
+  border: 1px solid #ccc;
+  padding-left: 12px;
+}
+
+.form-group {
+  margin-bottom: 1.25em;
+}
+
+.form-material .form-control {
+  display: inline-block;
+  height: 43px;
+  width: 100%;
+  border: 1px;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 9px;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.form-control-file {
+  margin-top: 5px;
+}
+
+.btn-primary {
+  cursor: pointer;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+.btn-enviar {
+  width: 100px;
+  height: 40px;
+  /* border: 1px solid #2bc37f; */
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0s;
+  background-color: #2bc37f;
+}
+.btn-enviar:hover {
+  background-color: #e5e8ea;
+}
+
+.btn-borrar {
+  width: 50px;
+  height: 40px;
+  border: 1px solid #ee964b;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0s;
+  background-color: orangered;
+  margin-top: 10px;
+}
+.btn-borrar:hover {
+  background-color: #e5e8ea;
+}
+
+.or-container {
+  align-items: center;
+  color: #ccc;
+  display: flex;
+  margin: 25px 0;
+}
+
+.line-separator {
+  background-color: darkgray;
+  flex-grow: 5;
+  height: 1px;
+}
+
+.or-label {
+  flex-grow: 1;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.or-seperator i {
+  padding: 0 10px;
+  background: #f7f7f7;
+  position: relative;
+  top: -11px;
+  z-index: 1;
+}
+
+.social-login button {
+  display: flex;
+  min-width: 600px;
+}
+
+.pass-form {
+  margin: none;
+}
+
+
+ /* Products main */
+ main.main {
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+}
+.main_products {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.main_products div {
+  width: 100%;
+  border: solid 2px black;
+  padding: 5px;
+  margin: 20px;
+}
+
+/* General Content*/
+
+.main_content {
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  border-radius: 15px;
 }
 
 /*///////////////////////////////   FOOTER   ///////////////////////////////*/
@@ -236,25 +415,47 @@ footer {
   .burger-menu {
     display: none;
   }
+  /* form */
+  .form-signin {
+    width: 90%;
+  }
+  /* Products main */
+  .main_products div {
+    width: 35%;
+    border: solid 2px black;
+    padding: 5px;
+    margin: 20px;
+  }
+  /*General Content*/
+  .main_content {
+    width: 90%;
+  }
 }
 /*/////////   DESKTOP   //////////////*/
 
-@media (min-width: 769px){
+@media (min-width: 769px) {
   .top-left {
-      display: flex;
-      width: 70%;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
   }
   .logo {
-      margin-left: 30px;
+    margin-left: 30px;
   }
   .searchbox {
-      width: auto;
-      margin: 0%;
-      padding-right: 30px;
+    width: auto;
+    margin: 0%;
+    padding-right: 30px;
   }
   .searchbox input {
-      width: auto;
+    width: auto;
+  }
+   /* Products main */
+   .main_products div {
+    width: 20%;
+    border: solid 2px black;
+    padding: 5px;
+    margin: 20px;
   }
 }

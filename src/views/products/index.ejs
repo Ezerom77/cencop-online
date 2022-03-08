@@ -1,50 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= title %></title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <%- include ('../partials/header.ejs') %>
-<!-- producto content START-->
-<main class="main">
-  <h3 class="title"><%= title %></h3>
-  
-  <% for(i=0;i<products.length;i++) { %>
-          <div>
-              <ul>
-                  <li>
-                      <a href="/products/detail/<%=products[i].id%>">
-                      <img src="/images/products/<%=products[i].image%>" alt="">
-                      <ul>
-                          <li><%=products[i].name%></li>
-                          <li>AR$ <%=products[i].price%></li>
-                          <li>Stock: <%=products[i].stock%></li>
-                      </ul>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-  <% } %>
 
-</main>
-<!-- producto content END-->
+  <%- include ('../partials/head.ejs') %>
+
+<body>
+  <%- include ('../partials/header.ejs') %>
+    <!-- producto content START-->
+    <main class="main_content">
+      <h3 class="title">
+        <%= title %>
+      </h3>
+      <div class="main_products">
+        <% for(i=0;i<products.length;i++) { %>
+          <div>
+            <ul>
+              <li>
+                <a href="/products/detail/<%=products[i].id%>">
+                  <img src="/images/products/<%=products[i].image%>" alt="">
+                  <ul>
+                    <li>
+                      <%=products[i].name%>
+                    </li>
+                    <li>Páginas: <%=products[i].pages%>
+                    </li>
+                    <li>Descripción: <%=products[i].description%>
+                    </li>
+                    <li>Stock: <%=products[i].stock%>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <% } %>
+      </div>
+    </main>
+    <!-- producto content END-->
     <%- include ('../partials/footer.ejs') %>
-  </body>
+</body>
+
 </html>
