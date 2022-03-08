@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "first_name": "Lezley",
+    "last_name": "Cuniffe",
+    "email": "lcuniffe0@de.vu",
+    "password": "UdwhxQ2",
+    "category": "user"
+  },
+  {
+    "id": 2,
+    "first_name": "Lawry",
+    "last_name": "Joiris",
+    "email": "ljoiris1@businessweek.com",
+    "password": "UfvZSeG",
+    "category": "user"
+  },
+  {
+    "id": 3,
+    "first_name": "Katusha",
+    "last_name": "MacFadden",
+    "email": "kmacfadden2@feedburner.com",
+    "password": "YrOsWZJ8cv",
+    "category": "admin"
+  }
+]
