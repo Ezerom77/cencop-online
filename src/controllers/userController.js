@@ -7,6 +7,9 @@ const usersController = {
     },
     created:(req, res)=>{
         res.send('Te registraste!! esto sigue pendiente')
+    },
+    pedido: (req, res)=>{
+        res.render('./users/pedido', { title: 'Pedido' })
     }
 }
 

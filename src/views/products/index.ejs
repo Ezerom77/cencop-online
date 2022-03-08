@@ -12,21 +12,22 @@
       </h3>
       <div class="main_products">
         <% for(i=0;i<products.length;i++) { %>
-          <div>
+          <div class="product_card">
             <ul>
               <li>
                 <a href="/products/detail/<%=products[i].id%>">
                   <img src="/images/products/<%=products[i].image%>" alt="">
-                  <ul>
+                  <ul class="card_detail">
                     <li>
-                      <%=products[i].name%>
-                    </li>
-                    <li>Páginas: <%=products[i].pages%>
+                     <h6><%=products[i].name%></h6>
                     </li>
                     <li>Descripción: <%=products[i].description%>
                     </li>
+                    <li>Páginas: <%=products[i].pages%>
+                    </li>
                     <li>Stock: <%=products[i].stock%>
                     </li>
+                    <li><button class="btn-enviar w-100 ">Ver</button></li>
                   </ul>
                 </a>
               </li>

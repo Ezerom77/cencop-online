@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include ('../partials/head.ejs') %>
+<body>
+  <%- include ('../partials/header.ejs') %>
+
+  <main class="main_content">
+    <h3 class="title">
+      <%= title %>
+    </h3>
+    <div class="main_products">
+        <div class="product_card">
+          <ul>
+            <li>
+                <img src="/images/products/<%=productDetail.image%>" alt="">
+                <ul class="card_detail">
+                  <li>
+                   <h6><%=productDetail.name%></h6>
+                  </li>
+                  <li>Descripción: <%=productDetail.description%>
+                  </li>
+                  <li>Páginas: <%=productDetail.pages%>
+                  </li>
+                  <li>Stock: <%=productDetail.stock%>
+                  </li>
+              
+                  <button class="btn-enviar w-100">Agregar al carrito</button>
+                <a href="/products/edit/<%= productDetail.id %>"><button class="btn-enviar w-100" id="edit">Editar Producto</button></a>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </main>
+  
+    <%- include('../partials/footer') %>
+  </body>
+</html>

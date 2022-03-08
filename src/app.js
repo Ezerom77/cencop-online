@@ -8,8 +8,8 @@ const userRouter = require("./routes/userRouter");
 const productRouter = require("./routes/productRouter");
 
 // method override  PUT & DELETE
-// const methodOverride = require('method-override');
-// app.use(methodOverride('_method'));
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 
 // Start Server
 app.listen(process.env.PORT || 3000, () =>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+<body>
+  <%- include('../partials/header') %>
+  <main class="form-signin">
+    <h1 class="form-title h3 mb-3 fw-normal">Estás editando:<br><i><%=ProductoaEditar.name %></i></h1>
+    <form method="post" action="/products/edit/<%=ProductoaEditar.id%>?_method=PUT" >
+      <div class="form-group">
+        <label for="productName">Nombre de producto</label>
+        <input value="<%=ProductoaEditar.name %>" type="text" class="form-control" id="productName" name="productName" >
+      </div>
+      <div class="form-group">
+        <label for="productDescription">Descripción del producto</label>
+        <input type="textarea" value="<%=ProductoaEditar.description %>" class="form-control" id="productDescription" name="productDescription" rows="3"></input>
+      </div>
+      <div class="form-group">
+        <label for="productCategorie">Categorías de productos</label>
+        <select multiple class="form-control" id="productCategorie" name="productCategorie">
+          <%
+          cate = ["Formularios", "Documentos", "Talonarios", "Recetarios"];
+            for ( let i = 0; i < cate.length; i++ )
+            {
+                let isSelected = ( ProductoaEditar.categories == cate[i] ) ? "selected" : "";
+            %>
+                <option value="<%=cate[i]%>" <%=isSelected %>>
+                    <%= cate[i] %>
+                </option>
+            <%
+            }
+            %>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="productPages">Cantidad de páginas</label>
+        <input value="<%=ProductoaEditar.pages %>" type="number" class="form-control" id="productPages" name="productPages" >
+      </div>
+      <div class="form-group">
+        <label for="productStock">Stock disponible (unidades)</label>
+        <input value="<%=ProductoaEditar.stock %>"type="number" class="form-control" id="productStock" name="productStock">
+      </div>
+      
+       <div class="form-group">
+        <label for="productImage">Imagen del producto</label>
+        <input type="file" class="form-control-file" id="productImage" name="productImage">
+      </div>
+    
+      <br>
+      <button class="btn-enviar w-100 " type="submit">Actualizar</button>
+    </form>
+    <form method="post" action="/products/edit/<%=ProductoaEditar.id%>?_method=DELETE" >      
+    <button class="btn-borrar w-100 " type="submit">Eliminar</button>
+    </form>
+  </main> 
+
+<%- include('../partials/footer') %>
+</body>
+</html>

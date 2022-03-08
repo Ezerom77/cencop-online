@@ -9,66 +9,75 @@
   "image": "form1.jpg"
  },
  {
-    "id": 2,
-    "name": "Formulario Admision",
-    "categories": "Formularios",
-    "pages": "1",
-    "stock": "144",
-    "description": "Formulario de ingreso de pacientes",
-    "image": "form2.jpg"
-   },
-   {
-    "id": 3,
-    "name": "Hojas Memebretadas",
-    "categories": "Documentos",
-    "pages": "1",
-    "stock": "234",
-    "description": "Hoja con membrete color",
-    "image": "form3.jpg"
-   },
-   {
-    "id": 4,
-    "name": "Talonario de ejemplo",
-    "categories": "Talonarios",
-    "pages": "200",
-    "stock": "65",
-    "description": "Talonario de ejemplo para Kiosko Online",
-    "image": "form4.jpg"
-   },
-   {
-    "id": 5,
-    "name": "Formulario Cardiología",
-    "categories": "Formularios",
-    "pages": "4",
-    "stock": "222",
-    "description": "Formulario de Cardiología para análisis y evolución",
-    "image": "form5.jpg"
-   },
-   {
-    "id": 6,
-    "name": "Formulario Farmacia",
-    "categories": "Formularios",
-    "pages": "2",
-    "stock": "2",
-    "description": "Formularios de Farmacia para ejemplo de Kiosko Online",
-    "image": "form6.jpg"
-   },
-   {
-    "id": 7,
-    "name": "Recetarios Genericos",
-    "categories": "Recetarios",
-    "pages": "2",
-    "stock": "2",
-    "description": "Recetarios genericos con Logo",
-    "image": "form7.jpg"
-   },
-   {
-    "id": 8,
-    "name": "Consentimiento informado",
-    "categories": "Formularios",
-    "pages": "2",
-    "stock": "2",
-    "description": "Formulario de consentimiento",
-    "image": "form8.jpg"
-   }
+  "id": 2,
+  "name": "Formulario Admision",
+  "categories": "Formularios",
+  "pages": "1",
+  "stock": "144",
+  "description": "Formulario de ingreso de pacientes",
+  "image": "form2.jpg"
+ },
+ {
+  "id": 3,
+  "name": "Hojas Memebretadas",
+  "categories": "Documentos",
+  "pages": "1",
+  "stock": "234",
+  "description": "Hoja con membrete color",
+  "image": "form3.jpg"
+ },
+ {
+  "id": 4,
+  "name": "Talonario de ejemplo",
+  "categories": "Talonarios",
+  "pages": "200",
+  "stock": "65",
+  "description": "Talonario de ejemplo para Kiosko Online",
+  "image": "form4.jpg"
+ },
+ {
+  "id": 5,
+  "name": "Formulario Cardiología",
+  "categories": "Formularios",
+  "pages": "4",
+  "stock": "222",
+  "description": "Formulario de Cardiología para análisis y evolución",
+  "image": "form5.jpg"
+ },
+ {
+  "id": 6,
+  "name": "Formulario Farmacia",
+  "categories": "Formularios",
+  "pages": "2",
+  "stock": "2",
+  "description": "Formularios de Farmacia para ejemplo de Kiosko Online",
+  "image": "form6.jpg"
+ },
+ {
+  "id": 7,
+  "name": "Recetarios Genericos",
+  "categories": "Recetarios",
+  "pages": "2",
+  "stock": "2",
+  "description": "Recetarios genericos con Logo",
+  "image": "form7.jpg"
+ },
+ {
+  "id": 8,
+  "name": "Consentimiento informado",
+  "categories": "Formularios",
+  "pages": "2",
+  "stock": "2",
+  "description": "Formulario de consentimiento",
+  "image": "form8.jpg"
+ },
+ {
+  "id": 9,
+  "name": "Form de Ejemplo",
+  "description": "Prueba de creacion de producto en JSON",
+  "categories": "Documentos",
+  "pages": "23",
+  "stock": "123",
+  "image": "1646775098001test.png"
+ }
 ]
