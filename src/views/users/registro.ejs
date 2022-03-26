@@ -7,7 +7,6 @@
     <form
       method="post"
       action="/users/registro"
-      enctype="multipart/form-data"
     >
       <h1 class="form-title h3 mb-3 fw-normal">
         Bienvenido/a!<br />Por favor registrate con tus datos:
@@ -17,7 +16,7 @@
           type="text"
           class="form-control"
           id="nombre"
-          name="userName"
+          name="first_name"
           placeholder="Juan"
         />
         <label for="nombre">Nombre</label>
@@ -27,7 +26,7 @@
           type="text"
           class="form-control"
           id="apellido"
-          name="userLastName"
+          name="last_name"
           placeholder="Perez"
         />
         <label for="apellido">Apellido</label>
@@ -37,12 +36,12 @@
           type="email"
           class="form-control"
           id="email"
-          name="userEmail"
+          name="email"
           placeholder="name@example.com"
         />
         <label for="email">Correo electrónico</label>
       </div>
-      <div class="form-floating">
+      <!-- <div class="form-floating">
         <input
           type="email"
           class="form-control"
@@ -51,18 +50,18 @@
           placeholder="name@example.com"
         />
         <label for="emailconfirm">Confirmar correo electrónico</label>
-      </div>
+      </div> -->
       <div class="form-floating">
         <input
           type="password"
           class="form-control"
           id="password"
-          name="userPassword"
+          name="password"
           placeholder="Contraseña"
         />
         <label for="password">Elegir contraseña</label>
       </div>
-      <div class="form-floating">
+      <!-- <div class="form-floating">
         <input
           type="password"
           class="form-control pass-form"
@@ -71,14 +70,14 @@
           placeholder="Confirmar contraseña"
         />
         <label for="passwordconfirm">Confirmar contraseña</label>
-      </div>
+      </div> -->
       <br />
-      <div class="checkbox mb-3">
+      <!-- <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="acceptterms" name="userTermsAccept" />
           Acepto los <a href="#!">Términos y Condiciones</a>
         </label>
-      </div>
+      </div> -->
       <button class="btn-enviar w-100" type="submit">Registrarme</button>
     </form>
   </main>

@@ -1,26 +1,44 @@
 [
-  {
-    "id": 1,
-    "first_name": "Lezley",
-    "last_name": "Cuniffe",
-    "email": "lcuniffe0@de.vu",
-    "password": "UdwhxQ2",
-    "category": "user"
-  },
-  {
-    "id": 2,
-    "first_name": "Lawry",
-    "last_name": "Joiris",
-    "email": "ljoiris1@businessweek.com",
-    "password": "UfvZSeG",
-    "category": "user"
-  },
-  {
-    "id": 3,
-    "first_name": "Katusha",
-    "last_name": "MacFadden",
-    "email": "kmacfadden2@feedburner.com",
-    "password": "YrOsWZJ8cv",
-    "category": "admin"
-  }
+ {
+  "id": 1,
+  "first_name": "Lezley",
+  "last_name": "Cuniffe",
+  "email": "lcuniffe0@de.vu",
+  "password": "UdwhxQ2"
+ },
+ {
+  "id": 2,
+  "first_name": "Lawry",
+  "last_name": "Joiris",
+  "email": "ljoiris1@businessweek.com",
+  "password": "UfvZSeG"
+ },
+ {
+  "id": 3,
+  "first_name": "Katusha",
+  "last_name": "MacFadden",
+  "email": "kmacfadden2@feedburner.com",
+  "password": "YrOsWZJ8cv"
+ },
+ {
+  "id": 5,
+  "first_name": "Lionel",
+  "last_name": "Ruiz",
+  "email": "lisa.lucy.lange@gmail.com",
+  "password": "$2a$10$9C2LL18QXSKdnGX5dRlYb.LtvrgfRkX6cR0DZYc7uLnXK.HXLM5sW"
+ },
+ {
+  "id": 6,
+  "first_name": "fresco",
+  "last_name": "treto",
+  "email": "lisa.lucy.lange@gmail.com",
+  "password": "$2a$10$PSrn5vX.phR5ftLNNzJ1lu0eDBq4rAORNvDNJ9S5bTC60QCguMVfC"
+ },
+ {
+  "id": 7,
+  "first_name": "Ezequiel",
+  "last_name": "Romera",
+  "email": "eze@ezerom.com.ar",
+  "password": "$2a$10$uHBmfdY0xPfq1.QFcY8I8uJjAc1pIrg54nPEdGfhMtG07z.i5ZrHq"
+ }
 ]

@@ -11,5 +11,6 @@ router.post('/registro',userController.created);
 router.get('/pedido',userController.pedido);
 router.get('/login',userController.login);
 router.post('/login',userController.logedIn);
+router.get('logout',userController.logout);
 
 module.exports = router;
