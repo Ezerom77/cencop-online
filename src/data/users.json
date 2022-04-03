@@ -40,5 +40,12 @@
   "last_name": "Romera",
   "email": "eze@ezerom.com.ar",
   "password": "$2a$10$uHBmfdY0xPfq1.QFcY8I8uJjAc1pIrg54nPEdGfhMtG07z.i5ZrHq"
+ },
+ {
+  "id": 8,
+  "first_name": "Martin",
+  "last_name": "Q",
+  "email": "martin@m200la.com",
+  "password": "$2a$10$ofAz7NtFvwH6xG6pewseUePfy6iL5rryW2adOq.ZM1f/OlEuY9tqm"
  }
 ]

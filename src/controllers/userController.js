@@ -6,6 +6,7 @@ const usersController = {
     res.render("./users/index", { title: "CENCOP Online" });
   },
   registro: (req, res) => {
+    res.cookie('Testing', 'Hola',{maxAge:1000*30});
     res.render("./users/registro", { title: "Registro" });
   },
   created: (req, res) => {
@@ -42,7 +43,7 @@ const usersController = {
   logout: (req, res) => {
     req.session.destroy();
     res.redirect("/");
-  }
+  },
 };
 
 module.exports = usersController;

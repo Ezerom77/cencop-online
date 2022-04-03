@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const session = require("express-session");
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
+const cookieParser = require("cookie-parser");
 
 // con esto pueod manejar datos en el body
 app.use(express.json());
@@ -11,6 +13,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(
   session({ secret: "CENCOP key", resave: false, saveUninitialized: false })
 );
+app.use(userLoggedMiddleware); //es importante  que este MD este despues de Session para que no falle
+
+app.use(cookieParser()); //MD para manejo de cookies
 
 //require of routes
 const mainRouter = require("./routes/mainRouter");
