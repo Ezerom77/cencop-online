@@ -2,15 +2,19 @@
 const fs = require("fs");
 const path = require("path");
 
+// esto creo que no va a correr mas a partir de usar sequelize
 const productsFilePath = path.join(__dirname, "../data/products.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
-//controller
+const db = require("../database/models");
+
 const productController = {
   index: (req, res) => {
-    res.render("./products/index", {
-      title: "Todos los productos",
-      products: products,
+    db.Products.findAll().then((products) => {
+      res.render("./products/index", {
+        title: "Todos los productos",
+        products: products,
+      });
     });
   },
   add: (req, res) => {
@@ -46,16 +50,11 @@ const productController = {
     res.redirect("/products");
   },
   detail: (req, res) => {
-    let productoSeleccionado = null;
-    for (i = 0; i < products.length; i++) {
-      if (req.params.id == products[i].id) {
-        productoSeleccionado = products[i];
-      }
-    }
+    db.Products.findByPk(req.params.id).then((productoSeleccionado) => {
     res.render("./products/productDetail", {
       title: "Detalle de producto",
       productDetail: productoSeleccionado,
-    });
+    })});
   },
   // Edit Method
   edit: (req, res) => {
